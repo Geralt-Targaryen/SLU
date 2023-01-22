@@ -1,0 +1,74 @@
+Use GPU with index 0
+Initialization finished ...
+Random seed is set to 999
+Use GPU with index 0
+Load dataset and database finished, cost 2.0744s ...
+Dataset size: train -> 5119 ; dev -> 895
+Some weights of the model checkpoint at hfl/chinese-roberta-wwm-ext were not used when initializing BertForTokenClassification: ['cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight']
+- This IS expected if you are initializing BertForTokenClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForTokenClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at hfl/chinese-roberta-wwm-ext and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+TaggingFNNDecoder_pretrain(
+  (output_layer): Linear(in_features=768, out_features=1928, bias=True)
+  (loss_fct): CrossEntropyLoss()
+)
+Start pre-training ......
+Pre-training: 	Epoch: 0	Time: 3.8603	Training Loss: 6.4923
+Pre-training: 	Epoch: 1	Time: 3.8471	Training Loss: 5.2592
+Pre-training: 	Epoch: 2	Time: 3.8435	Training Loss: 4.4772
+Pre-training: 	Epoch: 3	Time: 3.8438	Training Loss: 3.9310
+Pre-training: 	Epoch: 4	Time: 3.8470	Training Loss: 3.5767
+Pre-training: 	Epoch: 5	Time: 3.8454	Training Loss: 3.3278
+Pre-training: 	Epoch: 6	Time: 3.8453	Training Loss: 3.1409
+Pre-training: 	Epoch: 7	Time: 3.8623	Training Loss: 3.0009
+Pre-training: 	Epoch: 8	Time: 3.8654	Training Loss: 2.8847
+Pre-training: 	Epoch: 9	Time: 3.8466	Training Loss: 2.7880
+Total training steps: 3200
+Start training ......
+Training: 	Epoch: 0	Time: 5.6190	Training Loss: 1.0223
+Evaluation: 	Epoch: 0	Time: 0.2135	Dev loss: 0.4888	Dev acc: 73.41	Dev fscore(p/r/f): (76.33/74.66/75.49)
+NEW BEST MODEL: 	Epoch: 0	Dev loss: 0.4888	Dev acc: 73.41	Dev fscore(p/r/f): (76.33/74.66/75.49)
+Training: 	Epoch: 1	Time: 5.5768	Training Loss: 0.4618
+Evaluation: 	Epoch: 1	Time: 0.2136	Dev loss: 0.4039	Dev acc: 77.65	Dev fscore(p/r/f): (81.06/79.87/80.46)
+NEW BEST MODEL: 	Epoch: 1	Dev loss: 0.4039	Dev acc: 77.65	Dev fscore(p/r/f): (81.06/79.87/80.46)
+Training: 	Epoch: 2	Time: 5.6341	Training Loss: 0.3594
+Evaluation: 	Epoch: 2	Time: 0.2135	Dev loss: 0.4142	Dev acc: 77.09	Dev fscore(p/r/f): (81.62/80.08/80.84)
+Training: 	Epoch: 3	Time: 5.6088	Training Loss: 0.2911
+Evaluation: 	Epoch: 3	Time: 0.2134	Dev loss: 0.3875	Dev acc: 77.21	Dev fscore(p/r/f): (82.35/80.29/81.31)
+Training: 	Epoch: 4	Time: 5.6185	Training Loss: 0.2368
+Evaluation: 	Epoch: 4	Time: 0.2133	Dev loss: 0.4031	Dev acc: 75.64	Dev fscore(p/r/f): (83.52/78.21/80.78)
+Training: 	Epoch: 5	Time: 5.6165	Training Loss: 0.1953
+Evaluation: 	Epoch: 5	Time: 0.2133	Dev loss: 0.4277	Dev acc: 75.20	Dev fscore(p/r/f): (83.97/77.58/80.65)
+Training: 	Epoch: 6	Time: 5.6369	Training Loss: 0.1647
+Evaluation: 	Epoch: 6	Time: 0.2139	Dev loss: 0.4902	Dev acc: 77.77	Dev fscore(p/r/f): (83.42/80.81/82.10)
+NEW BEST MODEL: 	Epoch: 6	Dev loss: 0.4902	Dev acc: 77.77	Dev fscore(p/r/f): (83.42/80.81/82.10)
+Training: 	Epoch: 7	Time: 5.6016	Training Loss: 0.1394
+Evaluation: 	Epoch: 7	Time: 0.2137	Dev loss: 0.5107	Dev acc: 77.54	Dev fscore(p/r/f): (84.40/80.08/82.18)
+Training: 	Epoch: 8	Time: 5.6124	Training Loss: 0.1216
+Evaluation: 	Epoch: 8	Time: 0.2140	Dev loss: 0.5048	Dev acc: 76.76	Dev fscore(p/r/f): (82.70/79.25/80.94)
+Training: 	Epoch: 9	Time: 5.6361	Training Loss: 0.1058
+Evaluation: 	Epoch: 9	Time: 0.2144	Dev loss: 0.5200	Dev acc: 76.87	Dev fscore(p/r/f): (83.88/79.77/81.77)
+Training: 	Epoch: 10	Time: 5.6207	Training Loss: 0.0940
+Evaluation: 	Epoch: 10	Time: 0.2141	Dev loss: 0.5357	Dev acc: 76.42	Dev fscore(p/r/f): (83.98/78.73/81.27)
+Training: 	Epoch: 11	Time: 5.6154	Training Loss: 0.0815
+Evaluation: 	Epoch: 11	Time: 0.2148	Dev loss: 0.5568	Dev acc: 75.42	Dev fscore(p/r/f): (83.43/78.21/80.73)
+Training: 	Epoch: 12	Time: 5.5866	Training Loss: 0.0772
+Evaluation: 	Epoch: 12	Time: 0.2144	Dev loss: 0.5778	Dev acc: 76.65	Dev fscore(p/r/f): (84.35/79.25/81.72)
+Training: 	Epoch: 13	Time: 5.6359	Training Loss: 0.0719
+Evaluation: 	Epoch: 13	Time: 0.2137	Dev loss: 0.6144	Dev acc: 76.98	Dev fscore(p/r/f): (84.62/79.14/81.79)
+Training: 	Epoch: 14	Time: 5.6344	Training Loss: 0.0667
+Evaluation: 	Epoch: 14	Time: 0.2139	Dev loss: 0.6543	Dev acc: 77.54	Dev fscore(p/r/f): (83.99/80.40/82.15)
+Training: 	Epoch: 15	Time: 5.6342	Training Loss: 0.0594
+Evaluation: 	Epoch: 15	Time: 0.2140	Dev loss: 0.6452	Dev acc: 77.54	Dev fscore(p/r/f): (84.73/80.40/82.50)
+Training: 	Epoch: 16	Time: 5.6202	Training Loss: 0.0538
+Evaluation: 	Epoch: 16	Time: 0.2137	Dev loss: 0.6377	Dev acc: 76.76	Dev fscore(p/r/f): (84.46/79.35/81.83)
+Training: 	Epoch: 17	Time: 5.6172	Training Loss: 0.0531
+Evaluation: 	Epoch: 17	Time: 0.2140	Dev loss: 0.6206	Dev acc: 76.98	Dev fscore(p/r/f): (84.72/79.77/82.17)
+Training: 	Epoch: 18	Time: 5.6153	Training Loss: 0.0486
+Evaluation: 	Epoch: 18	Time: 0.2137	Dev loss: 0.6358	Dev acc: 76.87	Dev fscore(p/r/f): (83.96/79.14/81.48)
+Training: 	Epoch: 19	Time: 5.6335	Training Loss: 0.0440
+Evaluation: 	Epoch: 19	Time: 0.2142	Dev loss: 0.7185	Dev acc: 77.99	Dev fscore(p/r/f): (84.20/81.13/82.63)
+NEW BEST MODEL: 	Epoch: 19	Dev loss: 0.7185	Dev acc: 77.99	Dev fscore(p/r/f): (84.20/81.13/82.63)
+FINAL BEST RESULT: 	Epoch: 19	Dev loss: 0.7185	Dev acc: 77.9888	Dev fscore(p/r/f): (84.1991/81.1262/82.6341)
+TOTAL TRAINING TIME: 122.40
